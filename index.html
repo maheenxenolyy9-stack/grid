@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grid Layouts</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      min-height: 100vh;
+      padding: 40px 20px;
+      font-family: sans-serif;
+      background: linear-gradient(160deg, #2f6fe4, #b08ee0);
+      color: #fff;
+      text-align: center;
+    }
+    h1 { margin-bottom: 30px; }
+    .grid {
+      max-width: 100vh;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 16px;
+    }
+    .card {
+      padding: 30px 10px;
+      background: #f5f3dc;
+      border: 4px solid #6b6f93;
+      border-radius: 4px;
+      color: #6b6f93;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .card:hover { background: #fff; }
+  </style>
+</head> 
+  <body>
+    <h1>Grid Layouts</h1>
+    <div class="grid">
+      <a class="card" href="layout1.html">Layout 1</a>
+      <a class="card" href="layout2.html">Layout 2</a>
+      <a class="card" href="layout3.html">Layout 3</a>
+      <a class="card" href="layout4.html">Layout 4</a>
+      <a class="card" href="layout5.html">Layout 5</a>
+      <a class="card" href="layout6.html">Layout 6</a>
+      <a class="card" href="layout7.html">Layout 7</a>
+      <a class="card" href="layout8.html">Layout 8</a>
+      <a class="card" href="layout9.html">Layout 9</a>
+    </div>
+  </body>
+</html>
