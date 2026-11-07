@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout 9</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding:0; }
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(160deg, #2f6fe4, #b08ee0);
+    }
+    .layout {
+      width: 90vw;
+      max-width: 700px;
+      aspect-ratio: 3 / 2;
+      display: grid;
+      gap: 0;
+      border: 3px solid #6b6f93;
+      outline: 2px solid #fff;
+      grid-template-columns: repeat(4,1fr);
+      grid-template-rows: 1fr 1.3fr 1fr;
+      grid-template-areas:
+        "a b c d"
+        "e e f f"
+        "g h i j"
+    }
+    .box {
+      background: #f5f3dc;
+      border: 3px solid #6b6f93;
+      box-shadow: inset 0 0 0 2px #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font: bold 1.2rem sans-serif;
+      color: #6b6f93;
+    }
+     .a { grid-area: a; }
+     .b { grid-area: b; }
+     .c { grid-area: c; }
+     .d { grid-area: d; }
+     .e { grid-area: e; }
+     .f { grid-area: f; }
+     .g { grid-area: g; }
+     .h { grid-area: h; }
+     .i { grid-area: i; }
+     .j { grid-area: j; }
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <div class="box a">A</div>
+    <div class="box b">B</div>
+    <div class="box c">C</div>
+    <div class="box d">D</div>
+    <div class="box e">E</div>
+    <div class="box f">F</div>
+    <div class="box g">G</div>
+    <div class="box h">H</div>
+    <div class="box i">I</div>
+    <div class="box j">J</div>
+  </div>
+</body>
+</html>
