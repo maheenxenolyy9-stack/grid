@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout 1</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(160deg, #2f6fe4, #b08ee0);
+    }
+    .layout {
+      width: 90vw;
+      max-width: 700px;
+      aspect-ratio: 3 / 2;
+      display: grid;
+      gap: 0;
+      border: 2px solid #6b6f93;
+      grid-template-column: 1fr 1fr 1fr;
+      grid-template-row: 1fr;
+      grid-template-areas:
+        "a b c";
+    }
+    .box {
+      background: #f5f3dc;
+      border: 2px solid #6b6f93;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font: bold 1.2rem sans-serif;
+      color: #6b6f93;
+    }
+    .a { grid-area: a;}
+    .b { grid-area: b;}
+    .c { grid-area: c;}
+  </style>
+</head>
+  <body>
+    <div class="layout">
+      <div class="box-a">A</div>
+      <div class="box-b">B</div>
+      <div class="box-c">C</div>
+    </div>
+  </body>
+</html>
+    
